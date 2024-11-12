@@ -7,6 +7,7 @@ public class LoginForm extends JFrame{
     private JPasswordField passwordtf;
     private JButton loginButton;
     private JPanel loginPanel;
+    private JButton createButton;
 
     public LoginForm(){
         super("Login");
