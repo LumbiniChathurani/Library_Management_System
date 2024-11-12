@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.View.CreateAccount;
 import org.example.View.LoginForm;
 import org.example.util.DBcon;
 
@@ -12,6 +13,7 @@ public class App {
         try (var conn = DBcon.getConnection()) {
 
             var loginView = new LoginForm();
+            var accountCreate = new CreateAccount();
 
         } catch (Exception e) {
             e.printStackTrace();
