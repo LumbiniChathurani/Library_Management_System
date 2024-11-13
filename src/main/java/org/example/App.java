@@ -15,6 +15,7 @@ public class App {
             var loginView = new LoginForm();
             var accountCreate = new CreateAccount();
 
+
         } catch (Exception e) {
             e.printStackTrace();
         }
