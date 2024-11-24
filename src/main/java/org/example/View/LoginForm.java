@@ -34,6 +34,7 @@ public class LoginForm extends JFrame{
             String email = emailtf.getText();
             String password = new String(passwordtf.getPassword());
 
+
             System.out.println("Login button is clicked");
             System.out.println("Password: "+password);
             System.out.println("email: "+email);
