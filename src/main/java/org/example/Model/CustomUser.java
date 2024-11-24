@@ -18,4 +18,11 @@ public class CustomUser {
     private String password;
     private UserRole userRole;
 
+
+    public CustomUser(int id, String email, String userName) {
+        this.id = id;
+        this.email = email;
+        this.userName = userName;
+    }
+
 }

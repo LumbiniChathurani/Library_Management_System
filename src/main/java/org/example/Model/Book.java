@@ -13,6 +13,9 @@ import lombok.NoArgsConstructor;
 public class Book {
    private long id;
    private String name;
+   private String type;
    private String author;
    private double price;
+
+
 }

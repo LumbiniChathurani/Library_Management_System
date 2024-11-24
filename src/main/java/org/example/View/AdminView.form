@@ -3,34 +3,47 @@
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="570"/>
+      <xy x="20" y="20" width="571" height="648"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-9408400"/>
+    </properties>
     <border type="none"/>
     <children>
-      <tabbedpane id="9db2a" binding="tabbedPane1" default-binding="true">
+      <tabbedpane id="9db2a" binding="mainPane">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
           </grid>
         </constraints>
-        <properties/>
-        <border type="none"/>
+        <properties>
+          <autoscrolls value="true"/>
+          <background color="-9408400"/>
+          <enabled value="true"/>
+          <font name="Microsoft YaHei" size="16"/>
+          <requestFocusEnabled value="false"/>
+        </properties>
+        <border type="empty"/>
         <children>
           <grid id="af3ed" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Home"/>
+              <tabbedpane title="Home" icon="images/home-removebg-preview (1).png"/>
             </constraints>
-            <properties/>
-            <border type="none"/>
+            <properties>
+              <background color="-12500671"/>
+            </properties>
+            <border type="none">
+              <title-color color="-16777216"/>
+            </border>
             <children>
               <component id="32b65" class="javax.swing.JLabel">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <font name="MS Outlook" size="36" style="1"/>
+                  <font name="Microsoft YaHei" size="36" style="1"/>
+                  <foreground color="-1973791"/>
                   <text value="Welcome Admin!"/>
                 </properties>
               </component>
@@ -39,240 +52,298 @@
           <grid id="b6943" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Manage members"/>
+              <tabbedpane title="Manage members" icon="images/member-removebg-preview (1).png"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-12500671"/>
+            </properties>
             <border type="none"/>
             <children>
-              <tabbedpane id="de7c9" binding="tabbedPane2" default-binding="true">
+              <tabbedpane id="de7c9" binding="memberPane">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <preferred-size width="200" height="200"/>
+                    <preferred-size width="83" height="30"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <autoscrolls value="true"/>
+                  <background color="-9408400"/>
+                  <font name="Microsoft YaHei" size="16"/>
+                  <tabPlacement value="1"/>
+                </properties>
                 <border type="none"/>
                 <children>
-                  <grid id="95eb9" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
+                  <grid id="95eb9" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="20">
+                    <margin top="0" left="0" bottom="0" right="10"/>
                     <constraints>
-                      <tabbedpane title="Add member"/>
+                      <tabbedpane title="Add member" icon="images/create__1_-removebg-preview.png"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12500671"/>
+                    </properties>
                     <border type="none"/>
                     <children>
-                      <hspacer id="ac032">
-                        <constraints>
-                          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </hspacer>
-                      <vspacer id="eaf0e">
-                        <constraints>
-                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="a0a9b" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Username"/>
-                        </properties>
-                      </component>
                       <component id="22af9" class="javax.swing.JLabel">
                         <constraints>
-                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Password"/>
                         </properties>
                       </component>
-                      <component id="c691b" class="javax.swing.JPasswordField" binding="passwordfld">
-                        <constraints>
-                          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="150" height="-1"/>
-                          </grid>
-                        </constraints>
-                        <properties/>
-                      </component>
-                      <component id="44a6b" class="javax.swing.JTextField" binding="userNamefld">
-                        <constraints>
-                          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="150" height="-1"/>
-                          </grid>
-                        </constraints>
-                        <properties/>
-                      </component>
                       <component id="228e2" class="javax.swing.JLabel">
                         <constraints>
-                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Email"/>
                         </properties>
                       </component>
-                      <component id="e7ae6" class="javax.swing.JTextField" binding="emailfld">
+                      <component id="59b07" class="javax.swing.JButton" binding="addMemberAddButton">
                         <constraints>
-                          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="83" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <background color="-1"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <icon value="images/create__1_-removebg-preview.png"/>
+                          <text value="Add"/>
+                        </properties>
+                      </component>
+                      <component id="a0a9b" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-855310"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
+                          <text value="Username"/>
+                        </properties>
+                      </component>
+                      <component id="c691b" class="javax.swing.JPasswordField" binding="addMemberPasswordfld">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
-                      <component id="59b07" class="javax.swing.JButton" binding="addButton" default-binding="true">
+                      <component id="e7ae6" class="javax.swing.JTextField" binding="addMemberEmailfld">
                         <constraints>
-                          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
                         </constraints>
                         <properties>
-                          <text value="Add"/>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
+                      </component>
+                      <component id="44a6b" class="javax.swing.JTextField" binding="addmemberUserNamefld">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
                         </properties>
                       </component>
                     </children>
                   </grid>
-                  <grid id="a3bc8" layout-manager="GridLayoutManager" row-count="10" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
+                  <grid id="a3bc8" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="10"/>
                     <constraints>
-                      <tabbedpane title="Update member"/>
+                      <tabbedpane title="Update member" icon="images/update-removebg-preview (1).png"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12500671"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <component id="1ce9c" class="javax.swing.JLabel">
                         <constraints>
-                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Id"/>
                         </properties>
                       </component>
-                      <hspacer id="1872a">
-                        <constraints>
-                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </hspacer>
-                      <vspacer id="ace65">
-                        <constraints>
-                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="44e79" class="javax.swing.JTextField" binding="idfld">
-                        <constraints>
-                          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="150" height="-1"/>
-                          </grid>
-                        </constraints>
-                        <properties/>
-                      </component>
                       <component id="aa248" class="javax.swing.JLabel">
                         <constraints>
-                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Username"/>
                         </properties>
                       </component>
-                      <component id="9ab41" class="javax.swing.JTextField" binding="usernamefld">
-                        <constraints>
-                          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="150" height="-1"/>
-                          </grid>
-                        </constraints>
-                        <properties/>
-                      </component>
                       <component id="5dd4a" class="javax.swing.JLabel">
                         <constraints>
-                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Password"/>
                         </properties>
                       </component>
-                      <component id="cc87b" class="javax.swing.JPasswordField" binding="passwordFld">
-                        <constraints>
-                          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="150" height="-1"/>
-                          </grid>
-                        </constraints>
-                        <properties/>
-                      </component>
                       <component id="1b8bd" class="javax.swing.JLabel">
                         <constraints>
-                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Email"/>
                         </properties>
                       </component>
-                      <component id="c3061" class="javax.swing.JTextField" binding="emailFld">
+                      <component id="79753" class="javax.swing.JButton" binding="updateMemberUpdateButton">
                         <constraints>
-                          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="83" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <icon value="images/update-removebg-preview (1).png"/>
+                          <text value="Update"/>
+                        </properties>
+                      </component>
+                      <component id="44e79" class="javax.swing.JTextField" binding="updateMemberIdfld">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
-                      <component id="79753" class="javax.swing.JButton" binding="updateButton" default-binding="true">
+                      <component id="9ab41" class="javax.swing.JTextField" binding="updateMemberUsernamefld">
                         <constraints>
-                          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
                         </constraints>
                         <properties>
-                          <text value="Update"/>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
+                      </component>
+                      <component id="cc87b" class="javax.swing.JPasswordField" binding="updateMemberPasswordFld">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
+                      </component>
+                      <component id="c3061" class="javax.swing.JTextField" binding="updateMemberEmailFld">
+                        <constraints>
+                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
                         </properties>
                       </component>
                     </children>
                   </grid>
-                  <grid id="b4dab" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                  <grid id="a3fa3" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                     <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
-                      <tabbedpane title="Delete member"/>
+                      <tabbedpane title="View members" icon="images/view-removebg-preview (1).png"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12500671"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <vspacer id="ab257">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <component id="f08bd" class="javax.swing.JButton" binding="showBtn">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="83" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <icon value="images/view-removebg-preview (1).png"/>
+                          <text value="Show"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="b4dab" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="10"/>
+                    <constraints>
+                      <tabbedpane title="Delete member" icon="images/delete-removebg-preview (1).png"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12500671"/>
+                      <preferredSize width="297" height="67"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <component id="e0e18" class="javax.swing.JLabel">
                         <constraints>
-                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Enter member Id:"/>
                         </properties>
                       </component>
-                      <hspacer id="760cb">
+                      <component id="1a63e" class="javax.swing.JTextField" binding="deleteMemberIdfld">
                         <constraints>
-                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </hspacer>
-                      <component id="1a63e" class="javax.swing.JTextField" binding="memberIdfld">
-                        <constraints>
-                          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false">
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
-                      <vspacer id="58584">
+                      <component id="e5a9" class="javax.swing.JButton" binding="deleteMemberDeleteButton">
                         <constraints>
-                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="e5a9" class="javax.swing.JButton" binding="deleteButton" default-binding="true">
-                        <constraints>
-                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="83" height="30"/>
+                          </grid>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <icon value="images/delete-removebg-preview (1).png"/>
                           <text value="Delete"/>
                         </properties>
                       </component>
                     </children>
-                  </grid>
-                  <grid id="a3fa3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
-                    <constraints>
-                      <tabbedpane title="View members"/>
-                    </constraints>
-                    <properties/>
-                    <border type="none"/>
-                    <children/>
                   </grid>
                 </children>
               </tabbedpane>
@@ -281,26 +352,35 @@
           <grid id="c05cb" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Manage books"/>
+              <tabbedpane title="Manage books" icon="images/png-clipart-book-book-thumbnail-removebg-preview (1).png"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-12500671"/>
+            </properties>
             <border type="none"/>
             <children>
-              <tabbedpane id="16947" binding="tabbedPane3" default-binding="true">
+              <tabbedpane id="16947" binding="bookPane">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <preferred-size width="200" height="200"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <autoscrolls value="true"/>
+                  <background color="-12500671"/>
+                  <font name="Microsoft YaHei" size="16"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <grid id="8b6e7" layout-manager="GridLayoutManager" row-count="9" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <margin top="0" left="10" bottom="0" right="10"/>
                     <constraints>
-                      <tabbedpane title="Add book"/>
+                      <tabbedpane title="Add book" icon="images/create__1_-removebg-preview.png"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <autoscrolls value="true"/>
+                      <background color="-12500671"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <component id="eb5" class="javax.swing.JLabel">
@@ -308,6 +388,8 @@
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Book name"/>
                         </properties>
                       </component>
@@ -318,6 +400,8 @@
                           </grid>
                         </constraints>
                         <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
                           <text value=""/>
                         </properties>
                       </component>
@@ -326,6 +410,8 @@
                           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Book type"/>
                         </properties>
                       </component>
@@ -335,13 +421,18 @@
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
                       <component id="ca976" class="javax.swing.JLabel">
                         <constraints>
                           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Author"/>
                         </properties>
                       </component>
@@ -351,13 +442,18 @@
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
                       <component id="1c6f0" class="javax.swing.JLabel">
                         <constraints>
                           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Price"/>
                         </properties>
                       </component>
@@ -367,24 +463,33 @@
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
                       <component id="40788" class="javax.swing.JButton" binding="addBookbtn">
                         <constraints>
-                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="83" height="30"/>
+                          </grid>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <icon value="images/create__1_-removebg-preview.png"/>
                           <text value="Add "/>
                         </properties>
                       </component>
                     </children>
                   </grid>
                   <grid id="cac7c" layout-manager="GridLayoutManager" row-count="11" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <margin top="0" left="10" bottom="0" right="10"/>
                     <constraints>
-                      <tabbedpane title="Update book"/>
+                      <tabbedpane title="Update book" icon="images/update-removebg-preview (1).png"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12500671"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <component id="bfd4f" class="javax.swing.JLabel">
@@ -392,6 +497,8 @@
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Book Id"/>
                         </properties>
                       </component>
@@ -401,13 +508,18 @@
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
                       <component id="174af" class="javax.swing.JLabel">
                         <constraints>
                           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Book name"/>
                         </properties>
                       </component>
@@ -417,72 +529,96 @@
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
                       <component id="8fb1c" class="javax.swing.JLabel">
                         <constraints>
                           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Book type"/>
                         </properties>
                       </component>
-                      <component id="4e09c" class="javax.swing.JTextField" binding="UpdateBookTypefld">
+                      <component id="4e09c" class="javax.swing.JTextField" binding="updateBookTypefld">
                         <constraints>
                           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
                       <component id="b7f42" class="javax.swing.JLabel">
                         <constraints>
                           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Author"/>
                         </properties>
                       </component>
-                      <component id="7ffc8" class="javax.swing.JTextField" binding="UpdateAuthorfld">
+                      <component id="7ffc8" class="javax.swing.JTextField" binding="updateBookAuthorfld">
                         <constraints>
                           <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
                       <component id="12fa1" class="javax.swing.JLabel">
                         <constraints>
                           <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Price"/>
                         </properties>
                       </component>
-                      <component id="2b69e" class="javax.swing.JTextField" binding="updatePricefld">
+                      <component id="2b69e" class="javax.swing.JTextField" binding="updateBookPricefld">
                         <constraints>
                           <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
-                      <component id="6bf91" class="javax.swing.JButton" binding="updateBtn">
+                      <component id="6bf91" class="javax.swing.JButton" binding="updateBookBtn">
                         <constraints>
-                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="83" height="30"/>
+                          </grid>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <icon value="images/update-removebg-preview (1).png"/>
                           <text value="Update"/>
                         </properties>
                       </component>
                     </children>
                   </grid>
                   <grid id="97f74" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <margin top="0" left="10" bottom="0" right="10"/>
                     <constraints>
-                      <tabbedpane title="Delete book"/>
+                      <tabbedpane title="Delete book" icon="images/delete-removebg-preview (1).png"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12500671"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <component id="2b824" class="javax.swing.JLabel">
@@ -490,6 +626,8 @@
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <foreground color="-1973791"/>
                           <text value="Enter book Id"/>
                         </properties>
                       </component>
@@ -504,26 +642,45 @@
                             <preferred-size width="150" height="-1"/>
                           </grid>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-1973791"/>
+                          <font name="Microsoft YaHei" size="16"/>
+                        </properties>
                       </component>
-                      <component id="802af" class="javax.swing.JButton" binding="deleteBookbtn">
+                      <component id="802af" class="javax.swing.JButton" binding="deleteBookDeletebtn">
                         <constraints>
-                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="83" height="30"/>
+                          </grid>
                         </constraints>
                         <properties>
+                          <font name="Microsoft YaHei" size="16"/>
                           <text value="Delete"/>
                         </properties>
                       </component>
                     </children>
                   </grid>
                   <grid id="64a03" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <margin top="0" left="10" bottom="0" right="10"/>
                     <constraints>
-                      <tabbedpane title="View books"/>
+                      <tabbedpane title="View books" icon="images/view-removebg-preview (1).png"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12500671"/>
+                    </properties>
                     <border type="none"/>
-                    <children/>
+                    <children>
+                      <component id="87fcc" class="javax.swing.JButton" binding="showBooksButton">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font name="Microsoft YaHei" size="16"/>
+                          <icon value="images/view-removebg-preview (1).png"/>
+                          <text value="Show"/>
+                        </properties>
+                      </component>
+                    </children>
                   </grid>
                 </children>
               </tabbedpane>
